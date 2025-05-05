@@ -2,9 +2,10 @@
   "name": "cafeteria",
   "version": "1.0.0",
   "description": "",
+  "Content-Type": "application/json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pedroporto87np"
+    "url": "https://github.com/Pedroporto87"
   },
   "license": "ISC",
   "author": "",
