@@ -86,9 +86,21 @@ exports.deletePedidos = (req, res) => {
 
         res.status(200).json({ message: 'Pedido deletado com sucesso' });
     })
-
-
 }
 
+exports.getPedidosPorStatus = (req, res) => {
+    const { status } = req.params;
+
+    const query = 'SELECT * FROM pedidos WHERE status = ?';
+
+    pool.query(query, [status], (error, results) => {
+        if (error) {
+            console.error('Erro ao buscar pedidos por status:', error);
+            return res.status(500).json({ error: 'Erro ao carregar pedidos por status', details: error });
+        }
+
+        res.status(200).json(results);
+    });
+};
 
 
