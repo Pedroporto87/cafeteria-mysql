@@ -1,3 +1,10 @@
+## Requisitos
+
+Node.js (versão >=14)
+MySQL instalado e em execução, na porta 3306
+Git (opcional, para clonar o repositório)
+
+
 ## Clonar o repositório
 
 git clone https://github.com/Pedroporto87/cafeteria-mysql.git
